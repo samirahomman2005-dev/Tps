@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 4 - Multimédia Accessible - Samira Homman</title>
+    <link rel="stylesheet" href="multimedia.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
+
+    <header>
+        <h1>Cours Multimédia : GLSID 1</h1>
+    </header>
+
+    <main id="main-content">
+
+        <section aria-labelledby="video-title">
+            <h2 id="video-title">Vidéo : Introduction au cours</h2>
+            <div class="media-wrapper">
+                <video controls width="100%">
+                    <source src="video.mp4" type="video/mp4">
+                    <track src="subtitles.vtt" kind="subtitles" srclang="fr" label="Français" default>
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+            <div class="transcription">
+                <h3>Transcription textuelle</h3>
+                <p>Ceci est la transcription complète du contenu de la vidéo pour les personnes malentendantes.</p>
+            </div>
+        </section>
+
+        <section id="audio">
+    <h2>Podcast Audio</h2>
+    <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'élément audio.
+</audio>
+    <p><em>Note : Ce média est un fichier de test utilisé pour démontrer l'intégration de contenus audio accessibles dans une page web.</em></p>
+</section>
+
+        <section>
+            <h2>Galerie d'images</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="alt="Paysage de montagnes enneigées avec un lac"" loading="lazy">
+                <img src="image2.jpg" alt="énuphar blanc flottant sur l'eau" loading="lazy">
+            </div>
+        </section>
+
+        <section>
+            <h2>Ressource externe (YouTube)</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/20SBeW_mZ_Q" title="Cours complémentaire sur l'accessibilité" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Samira Homman - ENSET Mohammedia</p>
+    </footer>
+
+</body>
+</html>                     

@@ -1,0 +1,101 @@
+/* 1. Style Global (Reset et Police) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #004182;
+    margin-bottom: 20px;
+}
+
+/* 2. Style du Formulaire */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Pour qu'il ne soit pas trop large */
+}
+
+/* 3. Style des Fieldset et Legend */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #004182;
+    padding: 0 10px;
+}
+
+/* 4. Alignement des Labels et Inputs */
+label {
+    display: block; /* Met le label au-dessus de l'input */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* Style pour les boutons radio et checkbox (pour qu'ils restent sur la même ligne) */
+input[type="radio"] + label, 
+input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+/* 5. Design des Champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[list],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Très important pour que le padding n'agrandisse pas l'input */
+    font-size: 14px;
+}
+
+/* Effet au clic (Focus) */
+input:focus, textarea:focus {
+    border-color: #004182;
+    outline: none;
+    background-color: #f9fbff;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical; /* Permet d'agrandir seulement en hauteur */
+}
+
+/* 6. Style du Bouton Submit */
+button[type="submit"] {
+    width: 100%;
+    background-color: #004182;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #002d5a;
+}
