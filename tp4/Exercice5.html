@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exercice 5 : Responsive Design</h1>
+
+  <p><strong>5.1 Mobile First</strong></p>
+  <pre><code>.container {
+  width: 100%;
+  padding: 15px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content {
+  display: block;
+}
+
+.sidebar {
+  display: none;
+}</code></pre>
+
+  <p><strong>Media queries pour tablette et desktop :</strong></p>
+  <pre><code>@media (min-width: 768px) {
+  .nav-menu {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}</code></pre>
+
+  <a href="index.html">Retour à l’accueil</a>
+</body>
+</html>

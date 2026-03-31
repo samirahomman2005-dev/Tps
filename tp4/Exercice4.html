@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exercice 4 : CSS Grid</h1>
+
+  <p><strong>4.1 Grille de cartes responsive</strong></p>
+  <pre><code>.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}</code></pre>
+
+  <p><strong>4.2 Layout complet avec Grid Areas</strong></p>
+  <pre><code>.page-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "sidebar main aside"
+    "footer footer footer";
+  gap: 20px;
+  min-height: 100vh;
+}</code></pre>
+
+  <a href="index.html">Retour à l’accueil</a>
+</body>
+</html>

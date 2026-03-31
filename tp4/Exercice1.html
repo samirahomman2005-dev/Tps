@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exercice 1 : Sélecteurs et spécificité</h1>
+
+  <p><strong>1. Sélectionnez tous les liens dans la navigation</strong></p>
+  <pre><code>.main-nav a { }</code></pre>
+
+  <p><strong>2. Sélectionnez uniquement le lien actif</strong></p>
+  <pre><code>.main-nav a.active { }</code></pre>
+
+  <p><strong>3. Sélectionnez l'article qui a la classe featured</strong></p>
+  <pre><code>.post.featured { }</code></pre>
+
+  <p><strong>4. Sélectionnez le premier paragraphe de chaque article</strong></p>
+  <pre><code>article p:first-of-type { }</code></pre>
+
+  <p><strong>5. Sélectionnez les éléments &lt;li&gt; pairs</strong></p>
+  <pre><code>li:nth-child(2n) { }</code></pre>
+
+  <h2>Spécificité</h2>
+  <p><strong>Classement :</strong></p>
+  <pre><code>
+p              -> 0-0-1
+.text          -> 0-1-0
+p.text         -> 0-1-1
+#main          -> 1-0-0
+#main .text p  -> 1-1-1
+  </code></pre>
+
+  <p><strong>Si deux règles ont la même spécificité, laquelle gagne ?</strong></p>
+  <pre><code>La dernière règle écrite gagne grâce à la cascade CSS</code></pre>
+
+  <p><strong>Pourquoi faut-il éviter !important ?</strong></p>
+  <pre><code>!important casse la logique de la cascade, rend le code difficile à maintenir et doit être évité sauf cas exceptionnel.</code></pre>
+
+  <a href="index.html">Retour à l’accueil</a>
+</body>
+</html>

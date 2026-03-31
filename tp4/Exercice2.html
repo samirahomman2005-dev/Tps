@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exercice 2 : Box Model</h1>
+
+  <p><strong>1. Avec box-sizing: content-box (défaut), quelle est la largeur totale visible de .box ?</strong></p>
+  <pre><code>Largeur totale = 300 + 40 + 10 = 350px</code></pre>
+
+  <p><strong>2. Avec box-sizing: border-box, quelle est la largeur totale visible ?</strong></p>
+  <pre><code>Largeur totale = 300px</code></pre>
+
+  <p><strong>3. Écrivez le reset CSS universel pour box-sizing</strong></p>
+  <pre><code>*, *::before, *::after {
+  box-sizing: border-box;
+}</code></pre>
+
+  <p><strong>2.2 Centrer un élément horizontalement</strong></p>
+  <pre><code>div {
+  width: 600px;
+  margin: 0 auto;
+}</code></pre>
+
+  <p><strong>2.4 Centrer un élément horizontalement et verticalement</strong></p>
+  <pre><code>div {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}</code></pre>
+
+  <a href="index.html">Retour à l’accueil</a>
+</body>
+</html>
